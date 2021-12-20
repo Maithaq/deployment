@@ -7,7 +7,7 @@ model=pickle.load(open('modelyoutube.pkl','rb'))
 def predict_fareamount(views,likes,dislikes,comment_count):
     input=np.array([[views,likes,dislikes,comment_count]]).astype(np.float64)
     prediction=model.predict(input)
-    return float(prediction)
+    return (prediction)
 def main():
     
     st.title(" youtube")
