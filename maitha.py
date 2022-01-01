@@ -44,10 +44,10 @@ def clean_text(text):
     text = [word for word in text if word not in punctuation]
     text = ''.join(text)
 
-     #Removing stopwords
-    text = text.split()
-    text = [w for w in text if not w in stop]
-    text = " ".join(text)
+#      #Removing stopwords
+#     text = text.split()
+#     text = [w for w in text if not w in stop]
+#     text = " ".join(text)
 
     # Return a list of words
     return text
