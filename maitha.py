@@ -67,7 +67,7 @@ def main():
   
     if st.button("Predict"):      
         output=predict_judgment(Text)
-        st.write('the text Predictis ', output)
+        st.write('القضية تقع ضمن اختصاص المحكمة :  ', output)
 
 if __name__=='__main__':
     main()
